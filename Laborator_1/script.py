@@ -160,7 +160,7 @@ print(first)
 print(last)
 
 # Read line of a file into a list
-with open("myfile.txt") as f:
+with open("../myfile.txt") as f:
     lines = [line.strip() for line in f]
 
     my_dict = {'name': 'John Doe', 'age': 25, 'magic_power': False}
