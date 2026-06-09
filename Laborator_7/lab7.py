@@ -8,7 +8,6 @@ from sklearn.metrics import mean_squared_error
 
 
 diabetes = load_diabetes()
-
 df = pd.DataFrame(diabetes.data, columns=diabetes.feature_names)
 df['target'] = diabetes.target
 
@@ -77,7 +76,7 @@ plt.ylabel('Target')
 plt.title('Regresie liniară simplă')
 plt.show()
 
-# MSE
+
 mse = mean_squared_error(y_test, y_pred)
 print("\nMSE (regresie simplă):", mse)
 
@@ -97,4 +96,3 @@ print("\nCoeficienți model (bmi, bp):", model2.coef_)
 r2 = model2.score(X2_test, y_test)
 print("R² (regresie multiplă):", r2)
 
-print("\nAnaliza completă finalizată.")
